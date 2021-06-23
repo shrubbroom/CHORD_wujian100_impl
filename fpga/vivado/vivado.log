@@ -133,3 +133,11 @@ reset_run synth_1
 launch_runs synth_1 -jobs 8
 [Thu Jun 24 04:04:09 2021] Launched synth_1...
 Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Jun 24 04:17:08 2021] Launched impl_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 24 04:26:07 2021] Launched impl_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.

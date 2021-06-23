@@ -2292,3 +2292,280 @@ Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:37 ; elapsed = 
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
+info: optimization accepted worst group hill climbing move (13734.0/oG. 186.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:10:36 ; elapsed = 00:10:59 . Memory (MB): peak = 3357.328 ; gain = 1057.590 ; free physical = 456 ; free virtual = 16344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping	Report
++---------------------------------+----------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object                                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+----------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
++---------------------------------+----------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping	Report
++---------------------------------------+-----------------------------------+-----------+----------------------+-------------+
+|Module Name                            | RTL Object                        | Inference | Size (Depth x Width) | Primitives  | 
++---------------------------------------+-----------------------------------+-----------+----------------------+-------------+
+|\x_usi0_sec_top/x_usi0                 | x_rx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|\x_usi0_sec_top/x_usi0                 | x_tx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|\x_usi2_sec_top/x_usi2                 | x_rx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|\x_usi2_sec_top/x_usi2                 | x_tx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|x_sub_apb1_top/\x_usi1_sec_top/x_usi1  | x_rx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|x_sub_apb1_top/\x_usi1_sec_top/x_usi1  | x_tx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
++---------------------------------------+-----------------------------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance i_1/x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:10:58 ; elapsed = 00:11:28 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 447 ; free virtual = 15910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:11:10 ; elapsed = 00:11:40 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 620 ; free virtual = 16209
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:11:10 ; elapsed = 00:11:40 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 621 ; free virtual = 16209
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:19 ; elapsed = 00:11:49 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 633 ; free virtual = 16196
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:11:20 ; elapsed = 00:11:50 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 642 ; free virtual = 16204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:11:21 ; elapsed = 00:11:52 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 600 ; free virtual = 16200
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:11:22 ; elapsed = 00:11:52 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 599 ; free virtual = 16201
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|wujian100_open_top | x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/genblk1[6].flip_reg_reg[6][0] | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
++-------------------+----------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |  1519|
+|3     |DSP48E1  |     4|
+|4     |LUT1     |  1381|
+|5     |LUT2     |  3761|
+|6     |LUT3     |  3406|
+|7     |LUT4     |  5352|
+|8     |LUT5     |  5023|
+|9     |LUT6     | 11984|
+|10    |MUXF7    |   395|
+|11    |MUXF8    |    51|
+|12    |RAM32M   |    18|
+|13    |RAMB36E1 |    64|
+|14    |SRL16E   |     2|
+|15    |FDCE     | 12277|
+|16    |FDPE     |  1173|
+|17    |FDRE     |  1052|
+|18    |IBUF     |     4|
+|19    |IOBUF    |    51|
+|20    |OBUF     |     1|
+|21    |OBUFT    |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:11:22 ; elapsed = 00:11:52 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 599 ; free virtual = 16201
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 595 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:11:11 ; elapsed = 00:11:44 . Memory (MB): peak = 3369.254 ; gain = 852.828 ; free physical = 4660 ; free virtual = 20340
+Synthesis Optimization Complete : Time (s): cpu = 00:11:28 ; elapsed = 00:11:57 . Memory (MB): peak = 3369.254 ; gain = 1069.516 ; free physical = 4664 ; free virtual = 20339
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.60 ; elapsed = 00:00:00.60 . Memory (MB): peak = 3369.254 ; gain = 0.000 ; free physical = 4649 ; free virtual = 20328
+INFO: [Netlist 29-17] Analyzing 2102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3413.355 ; gain = 0.000 ; free physical = 4605 ; free virtual = 20286
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 51 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+690 Infos, 212 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:11:43 ; elapsed = 00:12:13 . Memory (MB): peak = 3413.355 ; gain = 1113.754 ; free physical = 4809 ; free virtual = 20489
+INFO: [Common 17-1381] The checkpoint '/home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/wujian100_open_top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3445.371 ; gain = 32.016 ; free physical = 4796 ; free virtual = 20495
+INFO: [runtcl-4] Executing : report_utilization -file wujian100_open_top_utilization_synth.rpt -pb wujian100_open_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 04:16:43 2021...
