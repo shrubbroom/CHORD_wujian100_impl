@@ -52,13 +52,12 @@ module ahb_lite_cordic
    // reg     [ 31 : 0 ]              DATA;
 
    parameter             HTRANS_IDLE = 2'b0;
-   reg                   read_fifo;
+   reg [31 : 0]          HADDR_LATCH;
    always @ (posedge HCLK or negedge HRESETn)
      if (~HRESETn)
-       read_fifo = 0;
+       HADDR_LATCH = 0;
      else
-       if (HADDR == 32'h40010000) read_fifo =1;
-       else read_fifo = 0;
+       HADDR_LATCH = HADDR;
 
    assign  HRESP  = 2'b0;
    // assign  HREADYOUT = (State == S_IDLE);
@@ -66,7 +65,7 @@ module ahb_lite_cordic
    // assign HREADYOUT = !((State == S_READ) && empty);
    assign HREADYOUT = 1;
    assign valid_in_interface=(State == S_WRITE);
-   assign read_fifo_en=(State == S_READ) & read_fifo;
+   assign read_fifo_en=(State == S_READ) & (HADDR_LATCH == 32'h40010000);
 
    wire                  NeedAction = (HTRANS != HTRANS_IDLE) && HSEL;
    // wire    NeedRefresh         = ~|delay_u;
@@ -100,7 +99,7 @@ module ahb_lite_cordic
         // S_READ        :   HRDATA = out_fifo;
         S_WRITE       :   in_interface = HWDATA;
       endcase
-      HRDATA = (HADDR == 32'h40010000)?out_fifo:(empty?0:1);
+      HRDATA = (HADDR_LATCH == 32'h40010000)?out_fifo:(empty?0:1);
    end
 
 endmodule //ahb_lite_cordic
