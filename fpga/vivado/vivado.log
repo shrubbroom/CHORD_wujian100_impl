@@ -54,3 +54,43 @@ reset_run synth_1
 launch_runs synth_1 -jobs 8
 [Thu Jun 24 01:21:56 2021] Launched synth_1...
 Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Thu Jun 24 01:36:41 2021] Launched impl_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.41 . Memory (MB): peak = 7553.500 ; gain = 0.000 ; free physical = 4529 ; free virtual = 24806
+INFO: [Netlist 29-17] Analyzing 2067 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/EB034A10.xdc]
+Finished Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/EB034A10.xdc]
+Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/wujian100_open_timing.xdc]
+Finished Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/wujian100_open_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7607.215 ; gain = 0.000 ; free physical = 4409 ; free virtual = 24688
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 51 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 7696.875 ; gain = 143.375 ; free physical = 4284 ; free virtual = 24587
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 8250.785 ; gain = 553.910 ; free physical = 3740 ; free virtual = 24059
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 24 01:47:10 2021] Launched impl_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Thu Jun 24 02:30:56 2021] Launched synth_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log
+[Thu Jun 24 02:30:56 2021] Launched impl_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
+close_design

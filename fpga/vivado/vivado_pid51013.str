@@ -482,3 +482,431 @@ dismissDialog("Run Synthesis"); // A
 // 'k' command handler elapsed time: 5 seconds
 dismissDialog("Starting Design Runs"); // bz
 // TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Completed: addNotify
+// Elapsed time: 865 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Synthesis Completed"); // ag
+selectTab((HResource) null, (HResource) null, "Log", 2); // aK
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aK
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-153] Param 'general.maxThread' does not exist. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-153] Param 'general.maxThread' does not exist. ]", 3, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Common 17-153] Param 'general.maxThread' does not exist. ]", 3, false, false, false, false, false, true); // ah - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages,  [Wed Jun 23 23:10:07 2021] Launched synth_1.... ]", 2, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v:13]. ]", 11, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v:13]. ]", 11, false); // ah
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Thu Jun 24 01:36:41 2021] Launched impl_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 280 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'x_main_bus_topi_7/chord_top/bus_top/fifo/empty_in_reg/Q' [/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v:13]. ]", 10, true); // ah - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Implementation Completed: addNotify
+// Elapsed time: 291 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Implementation Completed"); // ag
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Post-Place Phys Opt Design (phys_opt_design) ;  ;  ;  ; ", 22, "Post-Place Phys Opt Design (phys_opt_design)", 0, true); // O - Node
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "Timing Summary - Opt Design ; report_timing_summary ; max_paths = 10;  ;  ; ", 10, "Timing Summary - Opt Design", 0, false); // O
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // u
+// bz (cr):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xc7a200tfbg484-1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,957 MB. GUI used memory: 85 MB. Current time: 6/24/21, 1:46:35 AM CST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,957 MB. GUI used memory: 84 MB. Current time: 6/24/21, 1:46:38 AM CST
+// TclEventType: DESIGN_NEW
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.6s
+// [Engine Memory]: 1,976 MB (+9858kb) [02:44:18]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgdAndInitRouteStorage elapsed time: 1.2s
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 164 MB (+4611kb) [02:44:20]
+// WARNING: HEventQueue.dispatchEvent() is taking  2705 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a200tfbg484-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.41 ; elapsed = 00:00:00.41 . Memory (MB): peak = 7553.500 ; gain = 0.000 ; free physical = 4529 ; free virtual = 24806 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 2067 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/EB034A10.xdc] Finished Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/EB034A10.xdc] Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/wujian100_open_timing.xdc] Finished Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/wujian100_open_timing.xdc] 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7607.215 ; gain = 0.000 ; free physical = 4409 ; free virtual = 24688 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 69 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 51 instances   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 7696.875 ; gain = 143.375 ; free physical = 4284 ; free virtual = 24587 
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aI (cr): Report Timing Summary: addNotify
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'r' command handler elapsed time: 3 seconds
+dismissDialog("Report Timing Summary"); // aI
+// bz (cr):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 
+// RouteApi::initDelayMediator elapsed time: 7.1s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [Timing 38-35] Done setting XDC timing constraints. INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max. INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs 
+// TclEventType: TIMING_RESULTS_STALE
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 179 MB (+7054kb) [02:44:32]
+// [Engine Memory]: 2,565 MB (+513697kb) [02:44:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  1479 ms.
+// Tcl Message: report_timing_summary: Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 8250.785 ; gain = 553.910 ; free physical = 3740 ; free virtual = 24059 
+dismissDialog("Report Timing Summary"); // bz
+// HMemoryUtils.trashcanNow. Engine heap size: 2,606 MB. GUI used memory: 126 MB. Current time: 6/24/21, 1:46:55 AM CST
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jun 24 01:47:10 2021] Launched impl_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,718 MB. GUI used memory: 126 MB. Current time: 6/24/21, 1:47:15 AM CST
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 2,718 MB (+26421kb) [02:46:04]
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 79 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 1704 seconds
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_HOLD_SLACK, "-0.253 ns"); // h
+// PAPropertyPanels.initPanels (Path 51) elapsed time: 0.5s
+selectButton(PAResourceAtoD.DesignTimingSumSectionPanel_WORST_HOLD_SLACK, "-0.253 ns"); // h
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "From", 5); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 54 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A18620_reg[14]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[14]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 3, "x_cpu_top/CPU/x_cr_had_top/A18545/A18620_reg[14]/C", 5); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 56 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[21]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 5, "x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C", 5); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 56 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[21]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 5, "x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C", 5); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 56 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[21]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 5, "x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C", 5); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 56 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[21]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 5, "x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[21]/C", 5); // h
+selectTableHeader(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Total Delay", 7); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 51 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[10]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[10]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 0, "x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[10]/D", 6); // h
+selectTable(PAResourceTtoZ.TimingItemFlatTablePanel_TABLE, "Path 51 ; -0.25316083 ; 1 ; 2 ; 3 ; x_cpu_top/CPU/x_cr_had_top/A18545/A82_reg[10]/C ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[10]/D ; 0.58633256 ; 0.239 ; 0.34733254 ; 0.0 ; EHS ; JTAG_CLK ;  ; 0.03535534", 0, "x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[10]/D", 6, false, false, false, false, true); // h - Double Click
+// [GUI Memory]: 189 MB (+1207kb) [03:14:44]
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "clock pessimism ; 0.000 ; 1.525 ;  ; ", 13, (String) null, 4); // C
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=0) ; 0.000 ; 0.000 ;  ; PAD_JTAG_TCLK", 2, "PAD_JTAG_TCLK", 4); // C
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "FDRE ;  ;  ;  ; x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[10]/D", 5, "x_cpu_top/CPU/x_cr_had_top/A15d/A1864c_reg[10]/D", 4); // C
+selectTable(PAResourceOtoP.PathReportTableView_DESCRIPTION, "net (fo=14134, unplaced) ; 0.210 ; 0.812 ;  ; x_cpu_top/CPU/x_cr_had_top/A18545/POUT_EHS_OBUF_BUFG", 8, "x_cpu_top/CPU/x_cr_had_top/A18545/POUT_EHS_OBUF_BUFG", 4); // C
+// HMemoryUtils.trashcanNow. Engine heap size: 2,720 MB. GUI used memory: 131 MB. Current time: 6/24/21, 2:17:15 AM CST
+collapseTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_cpu_top (core_top), CPU (E902_20191018), x_cr_had_top (cr_had_top)]", 10); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top)]", 12); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top)]", 15); // bC
+// PAPropertyPanels.initPanels (chord_top (chord_top)) elapsed time: 0.2s
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top)]", 17, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top)]", 17, true, false, false, false, false, true); // bC - Double Click - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top), Nets (234)]", 18, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top), Nets (234)]", 18, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top), Nets (234)]", 18, true, false, false, false, false, true); // bC - Double Click - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top), Nets (234), CO]", 19, true); // bC - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top), Nets (234), CO]", 19, true, false, false, false, false, true); // bC - Double Click - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top)]", 17, true); // bC - Node
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top)]", 17, true, false, false, false, true, false); // bC - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Cell Properties..."); // ak
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+closeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // az
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[wujian100_open_top, x_pdu_top (pdu_top), x_main_bus_top (ahb_matrix_top), chord_top (chord_top)]", 17, true, false, false, false, true, false); // bC - Popup Trigger - Node
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // ah
+selectMenu(PAResourceOtoP.PrimitivesMenu_HIGHLIGHT_LEAF_CELLS, "Highlight Leaf Cells"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// u (cr):  Generate Schematic : addNotify
+// Elapsed time: 55 seconds
+dismissDialog("Generate Schematic"); // u
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // f
+// Elapsed time: 664 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aK
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v)]", 13, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v)]", 13, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("bus_top.v", 156, 139); // bP
+selectCodeEditor("bus_top.v", 156, 139); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 2,740 MB. GUI used memory: 134 MB. Current time: 6/24/21, 2:30:00 AM CST
+selectCodeEditor("bus_top.v", 224, 184); // bP
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v)]", 13); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v), ahb_lite_cordic : ahb_lite_cordic (ahb_lite_cordic.v)]", 15, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v), ahb_lite_cordic : ahb_lite_cordic (ahb_lite_cordic.v)]", 15, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("ahb_lite_cordic.v", 264, 189); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("ahb_lite_cordic.v", 20, 142); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report DRC]", 23, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report DRC]", 23, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report DRC]", 23, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report DRC]", 23, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report DRC]", 23, false); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report DRC]", 23, false); // u
+// HMemoryUtils.trashcanNow. Engine heap size: 2,766 MB. GUI used memory: 134 MB. Current time: 6/24/21, 2:30:30 AM CST
+// Elapsed time: 11 seconds
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 50, 178); // bP
+selectCodeEditor("ahb_lite_cordic.v", 140, 210); // bP
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 32, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jun 24 02:30:56 2021] Launched synth_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log [Thu Jun 24 02:30:56 2021] Launched impl_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log 
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,767 MB. GUI used memory: 119 MB. Current time: 6/24/21, 2:31:00 AM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,767 MB. GUI used memory: 119 MB. Current time: 6/24/21, 2:31:00 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1638 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bz (cr):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bz
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bus_top.v", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ahb_lite_cordic.v", 3); // m
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+// Elapsed time: 251 seconds
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 199, 216); // bP
+selectCodeEditor("ahb_lite_cordic.v", 242, 184); // bP
+selectCodeEditor("ahb_lite_cordic.v", 164, 176); // bP
+selectCodeEditor("ahb_lite_cordic.v", 179, 281); // bP
+selectCodeEditor("ahb_lite_cordic.v", 179, 281); // bP
+selectCodeEditor("ahb_lite_cordic.v", 179, 281); // bP
+selectCodeEditor("ahb_lite_cordic.v", 179, 281); // bP
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// Elapsed time: 1081 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 2,693 MB. GUI used memory: 92 MB. Current time: 6/24/21, 3:01:00 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,785 MB. GUI used memory: 90 MB. Current time: 6/24/21, 3:10:45 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,817 MB. GUI used memory: 90 MB. Current time: 6/24/21, 3:11:05 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,849 MB. GUI used memory: 90 MB. Current time: 6/24/21, 3:11:55 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 2,866 MB (+11678kb) [04:09:39]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
