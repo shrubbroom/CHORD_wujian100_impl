@@ -405,3 +405,80 @@ dismissDialog("Implementation Completed"); // ag
 selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
 dismissDialog("Bitstream Generation Completed"); // ag
 // HMemoryUtils.trashcanNow. Engine heap size: 1,857 MB. GUI used memory: 91 MB. Current time: 6/24/21, 12:53:50 AM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,873 MB. GUI used memory: 111 MB. Current time: 6/24/21, 1:20:30 AM CST
+// [Engine Memory]: 1,873 MB (+15181kb) [02:18:08]
+// Elapsed time: 6289 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_GPIO_14 : PAD_DIG_IO (PAD_DIG_IO.v)]", 25, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_GPIO_17 : PAD_DIG_IO (PAD_DIG_IO.v)]", 28, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_GPIO_21 : PAD_DIG_IO (PAD_DIG_IO.v)]", 32, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_GPIO_28 : PAD_DIG_IO (PAD_DIG_IO.v)]", 39, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_PWM_FAULT : PAD_DIG_IO (PAD_DIG_IO.v)]", 43, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_PWM_CH2 : PAD_DIG_IO (PAD_DIG_IO.v)]", 46, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_PWM_CH6 : PAD_DIG_IO (PAD_DIG_IO.v)]", 50, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_PWM_CH9 : PAD_DIG_IO (PAD_DIG_IO.v)]", 53, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_USI1_SD0 : PAD_DIG_IO (PAD_DIG_IO.v)]", 61, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 68, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 69, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 69, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 69, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 69, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v)]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v)]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_cpu_top : core_top (core_top.v)]", 20, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_cpu_top : core_top (core_top.v)]", 20, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_MCURST : PAD_DIG_IO (PAD_DIG_IO.v)]", 23, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_GPIO_1 : PAD_DIG_IO (PAD_DIG_IO.v)]", 27, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_PAD_GPIO_5 : PAD_DIG_IO (PAD_DIG_IO.v)]", 31, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a
+// Elapsed time: 35 seconds
+String[] filenames27314 = {"/home/shrubbroom/Code/VLSI/wujian100_open/soc/ahb_lite_cordic.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/bus_top.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/chord_top.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/ex_top.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_input.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_output.v", "/home/shrubbroom/Code/VLSI/wujian100_open/soc/pipeline.v"};
+setFileChooser(filenames27314);
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 42 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+dismissDialog("Add Sources"); // c
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bz (cr):  Add Sources  : addNotify
+// Tcl Message: add_files -norecurse -scan_for_includes {/home/shrubbroom/Code/VLSI/wujian100_open/soc/ahb_lite_cordic.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/bus_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_input.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/chord_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/ex_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/pipeline.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_output.v} 
+dismissDialog("Add Sources"); // bz
+// [GUI Memory]: 152 MB (+2287kb) [02:19:18]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v)]", 12, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v)]", 12); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v)]", 13); // D
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v)]", 13); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), bus_top : bus_top (bus_top.v)]", 13); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wujian100_open_top (wujian100_open_fpga_top.v), x_pdu_top : pdu_top (pdu_top.v), x_main_bus_top : ahb_matrix_top (ahb_matrix_top.v), chord_top : chord_top (chord_top.v), ex_top : ex_top (ex_top.v)]", 16); // D
+// HMemoryUtils.trashcanNow. Engine heap size: 1,900 MB. GUI used memory: 83 MB. Current time: 6/24/21, 1:21:50 AM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cr): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bz (cr):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Thu Jun 24 01:21:56 2021] Launched synth_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE

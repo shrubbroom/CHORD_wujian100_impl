@@ -49,3 +49,8 @@ Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 [Wed Jun 23 23:34:32 2021] Launched impl_1...
 Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
+add_files -norecurse -scan_for_includes {/home/shrubbroom/Code/VLSI/wujian100_open/soc/ahb_lite_cordic.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/bus_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_input.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/chord_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/ex_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/pipeline.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_output.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Thu Jun 24 01:21:56 2021] Launched synth_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log

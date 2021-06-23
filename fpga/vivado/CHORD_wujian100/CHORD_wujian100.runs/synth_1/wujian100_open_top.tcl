@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tfbg484-1
 
@@ -133,6 +134,14 @@ read_verilog -library xil_defaultlib {
   /home/shrubbroom/Code/VLSI/wujian100_open/soc/usi0.v
   /home/shrubbroom/Code/VLSI/wujian100_open/soc/usi1.v
   /home/shrubbroom/Code/VLSI/wujian100_open/soc/wdt.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/ahb_lite_cordic.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/bus_top.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_input.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/chord_top.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/ex_top.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/pipeline.v
+  /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_output.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

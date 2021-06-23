@@ -37,3 +37,7 @@ launch_runs impl_1 -jobs 8
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
+add_files -norecurse -scan_for_includes {/home/shrubbroom/Code/VLSI/wujian100_open/soc/ahb_lite_cordic.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/bus_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_input.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/chord_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/ex_top.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/pipeline.v /home/shrubbroom/Code/VLSI/wujian100_open/soc/interface_output.v}
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1

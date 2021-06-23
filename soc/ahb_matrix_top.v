@@ -822,21 +822,22 @@ ahbm_dummy_top  x_main_mdummy_top2 (
   .mhwdata                  (mdummy2_hmain0_m6_hwdata),
   .mhwrite                  (mdummy2_hmain0_m6_hwrite)
 );
-ahb_dummy_top  x_main_imemdummy_top0 (
-  .haddr                       (hmain0_imemdummy0_s1_haddr ),
-  .hclk                        (pmu_imemdummy0_hclk        ),
-  .hprot                       (hmain0_imemdummy0_s1_hprot ),
-  .hrdata                      (imemdummy0_hmain0_s1_hrdata),
-  .hready                      (imemdummy0_hmain0_s1_hready),
-  .hresp                       (imemdummy0_hmain0_s1_hresp ),
-  .hrst_b                      (pmu_imemdummy0_hrst_b      ),
-  .hsel                        (hmain0_imemdummy0_s1_hsel  ),
-  .hsize                       (hmain0_imemdummy0_s1_hsize ),
-  .htrans                      (hmain0_imemdummy0_s1_htrans),
-  .hwdata                      (hmain0_imemdummy0_s1_hwdata),
-  .hwrite                      (hmain0_imemdummy0_s1_hwrite),
-  .intr                        (main_imemdummy0_intr       )
-);
+
+ ahb_dummy_top  x_main_imemdummy_top0 (
+   .haddr                       (hmain0_imemdummy0_s1_haddr ),
+   .hclk                        (pmu_imemdummy0_hclk        ),
+   .hprot                       (hmain0_imemdummy0_s1_hprot ),
+   .hrdata                      (imemdummy0_hmain0_s1_hrdata),
+   .hready                      (imemdummy0_hmain0_s1_hready),
+   .hresp                       (imemdummy0_hmain0_s1_hresp ),
+   .hrst_b                      (pmu_imemdummy0_hrst_b      ),
+   .hsel                        (hmain0_imemdummy0_s1_hsel  ),
+   .hsize                       (hmain0_imemdummy0_s1_hsize ),
+   .htrans                      (hmain0_imemdummy0_s1_htrans),
+   .hwdata                      (hmain0_imemdummy0_s1_hwdata),
+   .hwrite                      (hmain0_imemdummy0_s1_hwrite),
+   .intr                        (main_imemdummy0_intr       )
+ );
 ahb_dummy_top  x_main_dmemdummy_top0 (
   .haddr                       (hmain0_dmemdummy0_s5_haddr ),
   .hclk                        (pmu_dmemdummy0_hclk        ),
@@ -852,21 +853,40 @@ ahb_dummy_top  x_main_dmemdummy_top0 (
   .hwrite                      (hmain0_dmemdummy0_s5_hwrite),
   .intr                        (main_dmemdummy0_intr       )
 );
-ahb_dummy_top  x_main_dummy_top0 (
-  .haddr                   (hmain0_dummy0_s7_haddr ),
-  .hclk                    (pmu_dummy0_hclk        ),
-  .hprot                   (hmain0_dummy0_s7_hprot ),
-  .hrdata                  (dummy0_hmain0_s7_hrdata),
-  .hready                  (dummy0_hmain0_s7_hready),
-  .hresp                   (dummy0_hmain0_s7_hresp ),
-  .hrst_b                  (pmu_dummy0_hrst_b      ),
-  .hsel                    (hmain0_dummy0_s7_hsel  ),
-  .hsize                   (hmain0_dummy0_s7_hsize ),
-  .htrans                  (hmain0_dummy0_s7_htrans),
-  .hwdata                  (hmain0_dummy0_s7_hwdata),
-  .hwrite                  (hmain0_dummy0_s7_hwrite),
-  .intr                    (main_dummy0_intr       )
-);
+
+   chord_top chord_top
+     (
+      .HADDR                       (hmain0_dummy0_s7_haddr ),
+      .HCLK                        (pmu_dummy0_hclk        ),
+      .HPROT                       (hmain0_dummy0_s7_hprot ),
+      .HRDATA                      (dummy0_hmain0_s7_hrdata),
+      .HREADYOUT                   (dummy0_hmain0_s7_hready),
+      .HRESP                       (dummy0_hmain0_s7_hresp ),
+      .HRESETn                     (pmu_dummy0_hrst_b      ),
+      .HSEL                        (hmain0_dummy0_s7_hsel  ),
+      .HSIZE                       (hmain0_dummy0_s7_hsize ),
+      .HTRANS                      (hmain0_dummy0_s7_htrans),
+      .HWDATA                      (hmain0_dummy0_s7_hwdata),
+      .HWRITE                      (hmain0_dummy0_s7_hwrite),
+      .INTR                        (main_dummy0_intr       )
+      );
+
+
+// ahb_dummy_top  x_main_dummy_top0 (
+//   .haddr                   (hmain0_dummy0_s7_haddr ),
+//   .hclk                    (pmu_dummy0_hclk        ),
+//   .hprot                   (hmain0_dummy0_s7_hprot ),
+//   .hrdata                  (dummy0_hmain0_s7_hrdata),
+//   .hready                  (dummy0_hmain0_s7_hready),
+//   .hresp                   (dummy0_hmain0_s7_hresp ),
+//   .hrst_b                  (pmu_dummy0_hrst_b      ),
+//   .hsel                    (hmain0_dummy0_s7_hsel  ),
+//   .hsize                   (hmain0_dummy0_s7_hsize ),
+//   .htrans                  (hmain0_dummy0_s7_htrans),
+//   .hwdata                  (hmain0_dummy0_s7_hwdata),
+//   .hwrite                  (hmain0_dummy0_s7_hwrite),
+//   .intr                    (main_dummy0_intr       )
+// );
 dmac_top  x_dmac_top (
   .ch0_etb_evtdone            (ch0_etb_evtdone           ),
   .ch0_etb_htfrdone           (ch0_etb_htfrdone          ),
