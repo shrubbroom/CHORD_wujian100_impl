@@ -1701,3 +1701,572 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+DSP Report: Generating DSP x_out1, operation Mode is: (A:0x9b7b6)*B.
+DSP Report: operator x_out1 is absorbed into DSP x_out1.
+DSP Report: operator x_out1 is absorbed into DSP x_out1.
+DSP Report: Generating DSP x_out1, operation Mode is: (PCIN>>17)+(A:0x9b7b6)*B.
+DSP Report: operator x_out1 is absorbed into DSP x_out1.
+DSP Report: operator x_out1 is absorbed into DSP x_out1.
+DSP Report: Generating DSP y_out1, operation Mode is: (A:0x9b7b6)*B.
+DSP Report: operator y_out1 is absorbed into DSP y_out1.
+DSP Report: operator y_out1 is absorbed into DSP y_out1.
+DSP Report: Generating DSP y_out1, operation Mode is: (PCIN>>17)+(A:0x9b7b6)*B.
+DSP Report: operator y_out1 is absorbed into DSP y_out1.
+DSP Report: operator y_out1 is absorbed into DSP y_out1.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'x_main_bus_topi_7/chord_top/bus_top/fifo/empty_in_reg/Q' [/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v:13]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v:13]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/home/shrubbroom/Code/VLSI/wujian100_open/soc/fifo.v:13]
+INFO: [Synth 8-5545] ROM "m3_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m3_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m0_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m5_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s3_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s4_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s5_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s6_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s7_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m6_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s8_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m2_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s11_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s2_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m4_s9_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s1_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s10_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "m1_s0_data" won't be mapped to RAM because address size (49) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m0_hgrant driven by constant 1
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m1_hgrant driven by constant 1
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m2_hgrant driven by constant 1
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m3_hgrant driven by constant 1
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m4_hgrant driven by constant 1
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m5_hgrant driven by constant 1
+WARNING: [Synth 8-3917] design ahb_matrix_7_12_dec has port m6_hgrant driven by constant 1
+WARNING: [Synth 8-7129] Port s_haddr[31] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[30] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[29] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[28] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[27] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[26] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[25] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[24] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[23] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[22] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[21] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[20] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[19] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[18] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[17] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[16] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[15] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[14] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[13] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[12] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[11] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[10] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[3] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[2] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[1] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[0] in module chregc15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[31] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[30] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[29] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[28] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[27] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[26] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[25] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[24] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[23] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[22] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[21] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[20] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[19] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[18] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[17] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[16] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[15] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[14] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[13] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[12] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[11] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[10] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[3] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[2] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[1] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[0] in module chregc14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[31] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[30] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[29] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[28] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[27] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[26] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[25] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[24] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[23] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[22] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[21] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[20] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[19] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[18] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[17] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[16] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[15] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[14] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[13] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[12] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[11] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[10] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[3] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[2] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[1] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_hprot[0] in module chregc13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[31] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[30] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[29] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[28] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[27] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[26] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[25] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[24] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[23] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[22] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[21] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[20] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[19] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[18] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[17] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[16] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[15] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[14] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[13] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[12] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[11] in module chregc12 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_haddr[10] in module chregc12 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc9/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc8/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc7/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc6/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc5/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc4/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc3/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc2/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc1/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc15/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc14/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc13/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc12/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc11/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc10/we_prot_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (x_reg_ctrl/x_chregc0/we_prot_reg)
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[24]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[25]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[26]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[27]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[28]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[29]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[30]' (FDCE) to 'x_usi0_sec_top/x_usi0/x_apb_if/prdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_usi0_sec_top/x_usi0 /\x_apb_if/prdata_reg[31] )
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy1_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy2_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy3_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy4_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy5_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_lsbus_s2_hresp[1] driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy7_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy8_intr driven by constant 0
+WARNING: [Synth 8-3917] design apb0_sub_top__GB1 has port apb0_dummy9_intr driven by constant 0
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[24]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[25]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[26]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[27]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[28]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[29]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[30]' (FDCE) to 'x_usi2_sec_top/x_usi2/x_apb_if/prdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_usi2_sec_top/x_usi2 /\x_apb_if/prdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_apb0_sub_top/U_APB0_STATE_CTRL/o_root_pprot_reg[1] )
+INFO: [Synth 8-5546] ROM "s0_last_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s1_last_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s2_last_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s3_last_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s4_last_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s5_last_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design pdu_top__GC0 has port lsbus_dummy0_intr driven by constant 0
+WARNING: [Synth 8-3917] design pdu_top__GC0 has port lsbus_dummy1_intr driven by constant 0
+WARNING: [Synth 8-3917] design pdu_top__GC0 has port lsbus_dummy2_intr driven by constant 0
+WARNING: [Synth 8-3917] design pdu_top__GC0 has port lsbus_dummy3_intr driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/grey_rd_ptr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/grey_rd_ptr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/grey_wr_ptr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/grey_wr_ptr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/sync_rd_ptr_0_reg[0]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/sync_rd_ptr_0_reg[1]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_0_reg[0]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_0_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_0_reg[1]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/wfifo_wr_en_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/wr_ptr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/wr_ptr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/sync_rd_ptr_1_reg[0]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/sync_rd_ptr_1_reg[1]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[24]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[25]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[26]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[27]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[28]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[29]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[30]' (FDCE) to 'x_sub_apb1_top/x_usi1_sec_top/x_usi1/x_apb_if/prdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_sub_apb1_top/\x_usi1_sec_top/x_usi1 /\x_apb_if/prdata_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/wfifo_wr_en_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_sub_apb1_top/x_apb1_sub_top/\U_APB1_STATE_CTRL/o_root_pprot_reg[1] )
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_1_reg[0]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/wfifo_wr_en_reg'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/sync_wr_ptr_1_reg[1]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/wfifo_wr_en_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/rd_ptr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_sub_wr_afifo/rd_ptr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[11]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[9]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[9]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[3]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[3]' (FDC) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_cur_st_reg[1] )
+INFO: [Synth 8-7067] Removed DRAM instance i_29/x_sub_ls_top/x_sub_ls_top/x_sub_rd_afifo/mem_reg_0_1_0_2 from module pdu_top__GC0 due to constant propagation
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[30]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[31]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[32]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[33]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[34]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[35]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[36]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[37]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3886] merging instance 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[38]' (FDCE) to 'x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_sub_ls_top/x_sub_ls_top/x_matrix_sub_dec/m_ctrl_bus_d_reg[42] )
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[20]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[21]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[22]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[23]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[24]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[25]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[26]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[27]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3886] merging instance 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[31]' (FDCE) to 'x_sub_apb1_top/x_apb1_sub_top/U_APB1_STATE_CTRL/o_root_paddr_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (x_sub_apb1_top/x_apb1_sub_top/\U_APB1_STATE_CTRL/o_root_paddr_reg[19] )
+INFO: [Synth 8-5546] ROM "imm_inv" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb0_pclk_en driven by constant 1
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_pclk_en driven by constant 1
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[30] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[29] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[28] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[27] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[26] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[25] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[24] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[23] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[22] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[21] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[20] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[19] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[18] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[17] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[16] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[15] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[14] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[13] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[12] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[11] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[10] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[9] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[8] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[7] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[6] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[5] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[4] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[3] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[2] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[1] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port pmu_apb1_prdata[0] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[31] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[30] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[29] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[28] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[27] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[26] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[25] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[24] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[23] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[22] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[21] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[20] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[19] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[18] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[17] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[16] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[15] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[14] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[13] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[12] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[11] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[10] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[9] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[8] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[7] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[6] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[5] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[4] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[3] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[2] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[1] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_haddr[0] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hburst[2] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hburst[1] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hburst[0] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hprot[3] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hprot[2] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hprot[1] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hprot[0] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hsize[2] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hsize[1] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hsize[0] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_htrans[1] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_htrans[0] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hwdata[31] driven by constant 0
+WARNING: [Synth 8-3917] design wujian100_open_top__GC0 has port cpu_hmain0_m1_hwdata[30] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/pad_cpu_halt_ff1_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[0].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[12].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[8].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[4].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[3].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[31].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[15].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[11].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[2].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[14].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[10].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[6].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[1].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[13].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[9].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[5].x_cr_clic_kid /int_vld_ff_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/x_cr_core/\x_cr_cp0_top/x_cr_cp0_status/mprv_reg )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_wb/wb_int_spcu_inst_reg' (FDCE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_wb/wb_int_spcu_mask_reg'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_id_reg[6]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_id_reg[9]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_id_reg[7]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_id_reg[9]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_id_reg[8]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_id_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /x_cr_clic_arb/\clic_pad_int_id_reg[9] )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_priv_reg[0]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_priv_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/\x_cr_bmu_top/x_cr_bmu_ibus_if/acc_err_for_deny_reg )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[0]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[1]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[2]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[3]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[3]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/clic_pad_int_il_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\x_cpu_top/CPU /x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_retire/cpu_ext_int_b_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_wb/wb_int_spcu_mask_reg)
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/rty_first_reg' (FDC) to 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/rty_first_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_sms2_top/wr_deny_resp_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_sms2_top/rd_deny_resp_reg )
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/rty_first_reg' (FDC) to 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/rty_first_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_sms1_top/wr_deny_resp_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_sms1_top/rd_deny_resp_reg )
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/rty_first_reg' (FDC) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/rty_first_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_sms0_top/wr_deny_resp_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_sms0_top/rd_deny_resp_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_isram_top/x_sms_sms_ahbs/rty_first_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_isram_top/wr_deny_resp_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_isram_top/rd_deny_resp_reg )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/pad_cpu_halt_ff2_reg' (FDC) to 'x_cpu_top/CPU/x_cr_core_top/pad_cpu_halt_ff1_reg'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/lpmd_b_reg[1]' (FDPE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/lpmd_b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_mad/FSM_onehot_cur_st_reg[4]' (FDC) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_mad/FSM_onehot_cur_st_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_mad/FSM_onehot_cur_st_reg[5]' (FDC) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_mad/FSM_onehot_cur_st_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_mad/\FSM_onehot_cur_st_reg[2] )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nmbits_reg[1]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[4]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[5]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[3]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nmbits_reg[0]' (FDCE) to 'x_cpu_top/CPU/x_cr_tcipif_top/x_cr_clic_top/x_cr_clic_arb/nlbits_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[0].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[12].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[8].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[4].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[3].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[31].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[15].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[11].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[2].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[14].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[10].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[6].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[1].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[13].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[9].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /\INT_KID[5].x_cr_clic_kid /int_pending_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_clic_top /x_cr_clic_arb/\nlbits_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/\x_cr_iahbl_top/x_cr_ahbl_req_arb/cpu_req_bus_grnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/\x_cr_sahbl_top/x_cr_ahbl_req_arb/cpu_req_bus_grnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /\x_cr_tcipif_top/x_cr_tcipif_dbus/xx_tcip_grant_reg )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibusif/ibus_prot_reg_reg[0]' (FDE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibusif/ibus_prot_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibusif/ibus_prot_reg_reg[2]' (FDE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibusif/ibus_prot_reg_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/x_cr_core/\x_cr_ifu_top/x_ibusif/ibus_prot_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\x_cpu_top/CPU /x_cr_core_top/\x_cr_bmu_top/x_cr_bmu_dbus_if/iahbl_lrw_hit_ff_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/x_cr_core/x_cr_iu_top/x_cr_iu_wb/\wb_idx_buffer_reg[4] )
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_status/pm_reg[0]' (FDPE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_status/pm_reg[1]'
+INFO: [Synth 8-3886] merging instance 'x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_cdr_sync/cnt_reg1_reg' (FDC) to 'x_aou_top/x_rtc0_sec_top/x_rtc_pdu_top/x_rtc_cdr_sync/cnt_sync_reg[0]'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms2_top/rd_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/wr_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/rd_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms1_top/wr_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms1_top/rd_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms2_top/wr_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms2_top/rd_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/wr_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms2_top/wr_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms1_top/rd_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms1_top/wr_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/rd_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_sms0_top/wr_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3886] merging instance 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/rd_deny_resp_2_cycle_reg' (FDCE) to 'x_retu_top/x_smu_top/x_sms_top/x_isram_top/wr_deny_resp_2_cycle_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_retu_top/x_smu_top/x_sms_top /\x_isram_top/wr_deny_resp_2_cycle_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_cpu_top/CPU /x_cr_core_top/pad_cpu_halt_ff1_reg)
+INFO: [Synth 8-3886] merging instance 'x_cpu_top/CPU/x_cr_core_top/x_cr_sys_io/sysio_pad_lpmd_b_reg[1]' (FDPE) to 'x_cpu_top/CPU/x_cr_core_top/x_cr_sys_io/sysio_pad_lpmd_b_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_cur_st_reg[2]) is unused and will be removed from module cr_iu_mad.
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_br_cur_state_reg) is unused and will be removed from module cr_iu_retire.
+WARNING: [Synth 8-3332] Sequential element (x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cur_state_reg[1]) is unused and will be removed from module cr_core_top.
+WARNING: [Synth 8-3332] Sequential element (x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cur_state_reg[0]) is unused and will be removed from module cr_core_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:49 ; elapsed = 00:05:10 . Memory (MB): peak = 2779.445 ; gain = 482.707 ; free physical = 467 ; free virtual = 20756
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping	Report (see note below)
++---------------------------------+----------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object                                                     | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+----------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg  | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|\x_retu_top/x_smu_top/x_sms_top  | x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
++---------------------------------+----------------------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++---------------------------------------+-----------------------------------+-----------+----------------------+-------------+
+|Module Name                            | RTL Object                        | Inference | Size (Depth x Width) | Primitives  | 
++---------------------------------------+-----------------------------------+-----------+----------------------+-------------+
+|\x_usi0_sec_top/x_usi0                 | x_rx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|\x_usi0_sec_top/x_usi0                 | x_tx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|\x_usi2_sec_top/x_usi2                 | x_rx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|\x_usi2_sec_top/x_usi2                 | x_tx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|x_sub_apb1_top/\x_usi1_sec_top/x_usi1  | x_rx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
+|x_sub_apb1_top/\x_usi1_sec_top/x_usi1  | x_tx_sync_fifo_16x16/mem_fifo_reg | Implied   | 16 x 16              | RAM32M x 3	 | 
++---------------------------------------+-----------------------------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|pipeline    | (A:0x9b7b6)*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeline    | (PCIN>>17)+(A:0x9b7b6)*B | 21     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeline    | (A:0x9b7b6)*B            | 21     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|pipeline    | (PCIN>>17)+(A:0x9b7b6)*B | 21     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:57 ; elapsed = 00:05:19 . Memory (MB): peak = 2779.445 ; gain = 482.707 ; free physical = 245 ; free virtual = 20627
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
