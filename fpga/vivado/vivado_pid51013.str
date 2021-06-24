@@ -1393,3 +1393,81 @@ dismissDialog("Launch Run Critical Messages"); // bq
 selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
 selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a
 dismissDialog("Bitstream Generation Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 99 MB. Current time: 6/24/21, 4:34:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 98 MB. Current time: 6/24/21, 5:04:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 97 MB. Current time: 6/24/21, 5:34:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 6:04:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 6:34:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 7:04:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 7:34:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 8:04:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 8:34:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 9:04:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 9:34:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 10:04:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 10:34:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 11:04:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 11:34:12 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 96 MB. Current time: 6/24/21, 12:04:12 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,088 MB. GUI used memory: 97 MB. Current time: 6/24/21, 12:34:12 PM CST
+// Elapsed time: 30886 seconds
+selectCodeEditor("fifo.v", 233, 161); // bP
+selectCodeEditor("fifo.v", 199, 84); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,120 MB. GUI used memory: 128 MB. Current time: 6/24/21, 1:02:57 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 3,152 MB. GUI used memory: 97 MB. Current time: 6/24/21, 1:03:42 PM CST
+// Elapsed time: 71 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 3,168 MB (+5377kb) [14:01:57]
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// 'cA' command handler elapsed time: 4 seconds
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bz
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Jun 24 13:04:39 2021] Launched synth_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log [Thu Jun 24 13:04:39 2021] Launched impl_1... Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cr): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 3,169 MB. GUI used memory: 101 MB. Current time: 6/24/21, 1:33:42 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,169 MB. GUI used memory: 99 MB. Current time: 6/24/21, 2:03:42 PM CST
+// Elapsed time: 3782 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Bitstream Generation Completed"); // ag
+// HMemoryUtils.trashcanNow. Engine heap size: 3,169 MB. GUI used memory: 98 MB. Current time: 6/24/21, 2:33:42 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,169 MB. GUI used memory: 98 MB. Current time: 6/24/21, 3:03:42 PM CST

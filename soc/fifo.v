@@ -2,8 +2,8 @@ module fifo(input clk,reset,read_fifo_en,valid_out_interface,
             input  [31:0]  out_interface,
             output [31:0] out_fifo,
             output reg	     empty);
-reg [31:0] 		     mem [15:0];
-reg [4:0] 		     rp,wp; //read pointer, write pointer
+reg [31:0] 		     mem [255:0];
+reg [8:0] 		     rp,wp; //read pointer, write pointer
 // reg                  half_full_in;
 
 // wire full,overflow,half_full;
@@ -14,11 +14,11 @@ reg [4:0] 		     rp,wp; //read pointer, write pointer
 
 integer 		     i;
 
-assign out_fifo=mem[rp[3:0]];
+assign out_fifo=mem[rp[7:0]];
 
 always@(posedge clk or negedge reset) begin
     if (!reset) begin
-        for(i=16;i!=0;i=i-1)
+        for(i=256;i!=0;i=i-1)
           mem[i-1]<=0;
         rp<=0;
         wp<=0;
@@ -31,7 +31,7 @@ always@(posedge clk or negedge reset) begin
 
         //write
         if (valid_out_interface) begin
-            mem[wp[3:0]]<=out_interface;
+            mem[wp[7:0]]<=out_interface;
             wp<=wp+1;
           end
 
@@ -46,7 +46,7 @@ always@(posedge clk or negedge reset) begin
 
 always @(*) begin
     //determine signal full and empty and half_full
-    if (wp-rp==5'b00000)
+    if (wp-rp==9'b000000000)
       empty=1;
     // else if (wp-rp==5'b01000)
     //   half_full_in<=1;

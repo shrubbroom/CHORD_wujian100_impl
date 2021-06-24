@@ -1,0 +1,823 @@
+
+*** Running vivado
+    with args -log wujian100_open_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source wujian100_open_top.tcl -notrace
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source wujian100_open_top.tcl -notrace
+Command: link_design -top wujian100_open_top -part xc7a200tfbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.42 ; elapsed = 00:00:00.42 . Memory (MB): peak = 2295.742 ; gain = 0.000 ; free physical = 4814 ; free virtual = 19587
+INFO: [Netlist 29-17] Analyzing 3673 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/EB034A10.xdc]
+Finished Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/EB034A10.xdc]
+Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/wujian100_open_timing.xdc]
+Finished Parsing XDC File [/home/shrubbroom/Code/VLSI/wujian100_open/fpga/xdc/wujian100_open_timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2351.633 ; gain = 0.000 ; free physical = 4683 ; free virtual = 19458
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 69 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 51 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 18 instances
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2351.633 ; gain = 56.027 ; free physical = 4683 ; free virtual = 19458
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_JTAG_TCLK expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_MCURST expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH1 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH11 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH3 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH5 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH7 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH9 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_FAULT expects both input and output buffering but the buffers are incomplete.
+INFO: [Project 1-461] DRC finished with 0 Errors, 9 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2415.664 ; gain = 64.031 ; free physical = 4672 ; free virtual = 19447
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: f8da779e
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2759.820 ; gain = 344.156 ; free physical = 4186 ; free virtual = 18979
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 9 inverter(s) to 240 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 14c78b14d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4048 ; free virtual = 18857
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 221 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 14ecf30bc
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4038 ; free virtual = 18857
+INFO: [Opt 31-389] Phase Constant propagation created 9 cells and removed 34 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: b30a3416
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4025 ; free virtual = 18857
+INFO: [Opt 31-389] Phase Sweep created 6 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: b30a3416
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4025 ; free virtual = 18857
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: dc4af9dc
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4025 ; free virtual = 18857
+INFO: [Opt 31-389] Phase Shift Register Optimization created 1 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 166fd7b6f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4037 ; free virtual = 18856
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |             221  |                                              0  |
+|  Constant propagation         |               9  |              34  |                                              0  |
+|  Sweep                        |               6  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               1  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2931.758 ; gain = 0.000 ; free physical = 4037 ; free virtual = 18855
+Ending Logic Optimization Task | Checksum: f3350163
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2931.758 ; gain = 1.000 ; free physical = 4037 ; free virtual = 18856
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-322] Received HACOOException
+WARNING: [Pwropt 34-321] HACOOException: Too many TFIs and TFOs in design, exiting pwropt. You can change this limit with the param pwropt.maxFaninFanoutToNetRatio
+INFO: [Pwropt 34-232] Skipping BRAM gating because all BRAMs are in high frequency (i.e. period < 3.12 ns) clock domains.
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 64 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+ADD/BDD destructor called for node 51b849a0 ref = 2
+ADD/BDD destructor called for node 51b84980 ref = 1
+ADD/BDD destructor called for node 51b849c0 ref = 1
+ADD/BDD destructor called for node 51b849e0 ref = 1
+Ending Power Optimization Task | Checksum: f3350163
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:01:00 . Memory (MB): peak = 3531.789 ; gain = 600.031 ; free physical = 3935 ; free virtual = 18769
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: f3350163
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3531.789 ; gain = 0.000 ; free physical = 3935 ; free virtual = 18769
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3531.789 ; gain = 0.000 ; free physical = 3936 ; free virtual = 18770
+Ending Netlist Obfuscation Task | Checksum: f3350163
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3531.789 ; gain = 0.000 ; free physical = 3936 ; free virtual = 18770
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:35 ; elapsed = 00:01:16 . Memory (MB): peak = 3531.789 ; gain = 1180.156 ; free physical = 3936 ; free virtual = 18770
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3534.789 ; gain = 0.000 ; free physical = 3936 ; free virtual = 18771
+INFO: [Common 17-1381] The checkpoint '/home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3534.789 ; gain = 3.000 ; free physical = 3924 ; free virtual = 18769
+INFO: [runtcl-4] Executing : report_drc -file wujian100_open_top_drc_opted.rpt -pb wujian100_open_top_drc_opted.pb -rpx wujian100_open_top_drc_opted.rpx
+Command: report_drc -file wujian100_open_top_drc_opted.rpt -pb wujian100_open_top_drc_opted.pb -rpx wujian100_open_top_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1839 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1839]' to change the number of messages that should be reported.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:24 ; elapsed = 00:00:07 . Memory (MB): peak = 3720.793 ; gain = 186.004 ; free physical = 3822 ; free virtual = 18680
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1839 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1839]' to change the number of messages that should be reported.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cross_cur_st_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cross_cur_st_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cross_cur_st_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/iahbl_norm_hit_ff_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_ibus_if/iahbl_hit_ff_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_ibus_if/tcipif_hit_ff_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/FSM_onehot_cur_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/FSM_onehot_cur_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/FSM_onehot_cur_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/lpmd_b_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_0/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_0/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_1/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_1/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_2/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_2/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_3/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_3/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_4/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_4/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_JTAG_TCLK expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_MCURST expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH1 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH11 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH3 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH5 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH7 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_CH9 expects both input and output buffering but the buffers are incomplete.
+WARNING: [DRC RPBF-3] IO port buffering is incomplete: Device port PAD_PWM_FAULT expects both input and output buffering but the buffers are incomplete.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 31 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3819 ; free virtual = 18677
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d572cb19
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3819 ; free virtual = 18677
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3819 ; free virtual = 18677
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	PAD_JTAG_TCLK_IBUF_inst (IBUF.O) is locked to IOB_X0Y92
+	padmux_cpu_jtg_tclk_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1012d28c0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3859 ; free virtual = 18718
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1a63ed68a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3787 ; free virtual = 18653
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1a63ed68a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3787 ; free virtual = 18653
+Phase 1 Placer Initialization | Checksum: 1a63ed68a
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3781 ; free virtual = 18647
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1760f4fa8
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:12 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3736 ; free virtual = 18603
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1623ec90a
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:14 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3730 ; free virtual = 18605
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 342 LUTNM shape to break, 621 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 138, two critical 204, total 342, new lutff created 61
+INFO: [Physopt 32-775] End 1 Pass. Optimized 583 nets or cells. Created 342 new cells, deleted 241 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_2[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_3__8 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_0[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_18__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_1[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_3__10 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_1[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_3__7 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/WEA[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_3__6 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_2[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_3__11 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_0[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_18__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_2[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_3__14 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/WEA[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_3__12 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_15__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_1[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_3__13 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[1] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_14__0 could not be replicated
+INFO: [Physopt 32-117] Net x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_arb/ram_sel_0 could not be optimized because driver x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_arb/mem_reg_0_i_1__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[3] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_12__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_2[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/mem_reg_0_i_3__5 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/WEA[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_3__9 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[11] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_4__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[8] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_7__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[12] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_3__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[4] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_11__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_0[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_18__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[9] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_6__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[10] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_5__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[5] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_10__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[2] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_13__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[7] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_8__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[13] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_2__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_1[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/mem_reg_0_i_3__4 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[13] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_2__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[5] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_10__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[8] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_7__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[6] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_9__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[1] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_14__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/ADDRARDADDR[9] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sms_ahbs/mem_reg_0_i_6__0 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[10] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_5__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[6] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_9__1 could not be replicated
+INFO: [Physopt 32-117] Net x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_arb/ram_sel_3 could not be optimized because driver x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_arb/mem_reg_0_i_1__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[3] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_12__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/WEA[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/mem_reg_0_i_3__3 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[11] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_4__4 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/w_ram_addr_tmp_reg[1]_0[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/mem_reg_0_i_18 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[7] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_8__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[2] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_13__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[12] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_3__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[3] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_12__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[5] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_10__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[4] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_11__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/ADDRARDADDR[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sms_ahbs/mem_reg_0_i_15__1 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[8] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_7__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[6] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_9__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[4] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_11__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[7] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_8__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[10] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_5__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[13] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_2__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[11] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_4__6 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[9] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_6__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[12] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_3__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[1] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_14__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[0] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_15__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/ADDRARDADDR[2] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_isram_top/x_sms_sms_ahbs/mem_reg_0_i_13__2 could not be replicated
+INFO: [Physopt 32-117] Net x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/ADDRARDADDR[12] could not be optimized because driver x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sms_ahbs/mem_reg_0_i_3 could not be replicated
+INFO: [Physopt 32-117] Net x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_arb/ram_sel_6 could not be optimized because driver x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_arb/mem_reg_0_i_1__2 could not be replicated
+INFO: [Physopt 32-68] No nets found for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3643 ; free virtual = 18527
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          342  |            241  |                   583  |           0  |           1  |  00:00:02  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          342  |            241  |                   583  |           0  |           9  |  00:00:03  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: cd0d28bf
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:00:54 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3647 ; free virtual = 18531
+Phase 2.3 Global Placement Core | Checksum: 1d8fc012d
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:00:59 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3639 ; free virtual = 18522
+Phase 2 Global Placement | Checksum: 1d8fc012d
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:00:59 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3665 ; free virtual = 18549
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1d1b20efb
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:02 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3657 ; free virtual = 18541
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1f26b099e
+
+Time (s): cpu = 00:03:09 ; elapsed = 00:01:07 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3645 ; free virtual = 18530
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1a0bb1bab
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:07 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3646 ; free virtual = 18531
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 2109bf730
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:07 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3646 ; free virtual = 18531
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 220ba5c2b
+
+Time (s): cpu = 00:03:29 ; elapsed = 00:01:15 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3646 ; free virtual = 18532
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 22228888a
+
+Time (s): cpu = 00:03:55 ; elapsed = 00:01:37 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3571 ; free virtual = 18474
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1f289ef3b
+
+Time (s): cpu = 00:03:57 ; elapsed = 00:01:40 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3576 ; free virtual = 18476
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1c371a005
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:40 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3576 ; free virtual = 18476
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 122621810
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:01:51 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3561 ; free virtual = 18449
+Phase 3 Detail Placement | Checksum: 122621810
+
+Time (s): cpu = 00:04:31 ; elapsed = 00:01:51 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3561 ; free virtual = 18449
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: a5563ad4
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.702 | TNS=-1050.986 |
+Phase 1 Physical Synthesis Initialization | Checksum: 7fa826d0
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.93 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3560 ; free virtual = 18448
+INFO: [Place 46-33] Processed net x_pdu_top/x_main_bus_top/x_ahb_matrix_7_12_main/x_matrix_dec/sys_rst_reg, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg_1, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: ae697c1d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3558 ; free virtual = 18446
+Phase 4.1.1.1 BUFG Insertion | Checksum: a5563ad4
+
+Time (s): cpu = 00:05:02 ; elapsed = 00:02:00 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.503. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3556 ; free virtual = 18445
+Phase 4.1 Post Commit Optimization | Checksum: 1a638b7f6
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3556 ; free virtual = 18444
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1a638b7f6
+
+Time (s): cpu = 00:05:27 ; elapsed = 00:02:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                2x2|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1a638b7f6
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:10 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+Phase 4.3 Placer Reporting | Checksum: 1a638b7f6
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:10 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:10 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1a540731d
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:10 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+Ending Placer Task | Checksum: 10ce0e61a
+
+Time (s): cpu = 00:05:28 ; elapsed = 00:02:10 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3559 ; free virtual = 18447
+INFO: [Common 17-83] Releasing license: Implementation
+136 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:36 ; elapsed = 00:02:14 . Memory (MB): peak = 3736.801 ; gain = 16.008 ; free physical = 3657 ; free virtual = 18546
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3572 ; free virtual = 18530
+INFO: [Common 17-1381] The checkpoint '/home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3639 ; free virtual = 18544
+INFO: [runtcl-4] Executing : report_io -file wujian100_open_top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3628 ; free virtual = 18533
+INFO: [runtcl-4] Executing : report_utilization -file wujian100_open_top_utilization_placed.rpt -pb wujian100_open_top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file wujian100_open_top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.20 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3638 ; free virtual = 18543
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+145 Infos, 44 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3516 ; free virtual = 18491
+INFO: [Common 17-1381] The checkpoint '/home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3585 ; free virtual = 18507
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	PAD_JTAG_TCLK_IBUF_inst (IBUF.O) is locked to IOB_X0Y92
+	padmux_cpu_jtg_tclk_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: c0a22f6e ConstDB: 0 ShapeSum: 4c3eb6ac RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1bded5be
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:33 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3348 ; free virtual = 18275
+Post Restoration Checksum: NetGraph: 176243c3 NumContArr: 47c91fb Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1bded5be
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3357 ; free virtual = 18285
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1bded5be
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3312 ; free virtual = 18239
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1bded5be
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:35 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3312 ; free virtual = 18239
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2120b92eb
+
+Time (s): cpu = 00:01:27 ; elapsed = 00:00:51 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3271 ; free virtual = 18212
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.610  | TNS=0.000  | WHS=-1.549 | THS=-270.686|
+
+Phase 2 Router Initialization | Checksum: 1f74092cd
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:56 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3248 ; free virtual = 18199
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00182205 %
+  Global Horizontal Routing Utilization  = 0.00280899 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 46745
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 46745
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1f74092cd
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:56 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3248 ; free virtual = 18199
+Phase 3 Initial Routing | Checksum: 1874f8213
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:01:15 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3242 ; free virtual = 18179
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 15530
+ Number of Nodes with overlaps = 6275
+ Number of Nodes with overlaps = 2798
+ Number of Nodes with overlaps = 1063
+ Number of Nodes with overlaps = 288
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.722  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 26819afae
+
+Time (s): cpu = 00:08:08 ; elapsed = 00:05:30 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3214 ; free virtual = 18185
+Phase 4 Rip-up And Reroute | Checksum: 26819afae
+
+Time (s): cpu = 00:08:09 ; elapsed = 00:05:30 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3214 ; free virtual = 18185
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 26a8e0e36
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:05:32 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3213 ; free virtual = 18184
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.809  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 26a8e0e36
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:05:32 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3213 ; free virtual = 18184
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 26a8e0e36
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:05:32 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3213 ; free virtual = 18184
+Phase 5 Delay and Skew Optimization | Checksum: 26a8e0e36
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:05:32 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3213 ; free virtual = 18184
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1fbf5b3c7
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:05:37 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3205 ; free virtual = 18184
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.809  | TNS=0.000  | WHS=0.029  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 2715f8a01
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:05:38 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3205 ; free virtual = 18184
+Phase 6 Post Hold Fix | Checksum: 2715f8a01
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:05:38 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3205 ; free virtual = 18184
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 6.93635 %
+  Global Horizontal Routing Utilization  = 8.18011 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 1ec67fb79
+
+Time (s): cpu = 00:08:26 ; elapsed = 00:05:38 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3203 ; free virtual = 18182
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1ec67fb79
+
+Time (s): cpu = 00:08:27 ; elapsed = 00:05:38 . Memory (MB): peak = 3736.801 ; gain = 0.000 ; free physical = 3202 ; free virtual = 18181
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 206075d80
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:05:42 . Memory (MB): peak = 3767.805 ; gain = 31.004 ; free physical = 3199 ; free virtual = 18179
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.809  | TNS=0.000  | WHS=0.029  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 206075d80
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:05:42 . Memory (MB): peak = 3767.805 ; gain = 31.004 ; free physical = 3201 ; free virtual = 18181
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:08:32 ; elapsed = 00:05:42 . Memory (MB): peak = 3767.805 ; gain = 31.004 ; free physical = 3278 ; free virtual = 18257
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+160 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:09:00 ; elapsed = 00:05:49 . Memory (MB): peak = 3767.805 ; gain = 31.004 ; free physical = 3278 ; free virtual = 18257
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 3767.805 ; gain = 0.000 ; free physical = 3174 ; free virtual = 18241
+INFO: [Common 17-1381] The checkpoint '/home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 3767.805 ; gain = 0.000 ; free physical = 3240 ; free virtual = 18253
+INFO: [runtcl-4] Executing : report_drc -file wujian100_open_top_drc_routed.rpt -pb wujian100_open_top_drc_routed.pb -rpx wujian100_open_top_drc_routed.rpx
+Command: report_drc -file wujian100_open_top_drc_routed.rpt -pb wujian100_open_top_drc_routed.pb -rpx wujian100_open_top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1839 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1839]' to change the number of messages that should be reported.
+INFO: [Coretcl 2-168] The results of DRC are in file /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:48 ; elapsed = 00:00:10 . Memory (MB): peak = 4263.570 ; gain = 495.766 ; free physical = 3198 ; free virtual = 18185
+INFO: [runtcl-4] Executing : report_methodology -file wujian100_open_top_methodology_drc_routed.rpt -pb wujian100_open_top_methodology_drc_routed.pb -rpx wujian100_open_top_methodology_drc_routed.rpx
+Command: report_methodology -file wujian100_open_top_methodology_drc_routed.rpt -pb wujian100_open_top_methodology_drc_routed.pb -rpx wujian100_open_top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:28 ; elapsed = 00:00:07 . Memory (MB): peak = 4263.570 ; gain = 0.000 ; free physical = 3163 ; free virtual = 18188
+INFO: [runtcl-4] Executing : report_power -file wujian100_open_top_power_routed.rpt -pb wujian100_open_top_power_summary_routed.pb -rpx wujian100_open_top_power_routed.rpx
+Command: report_power -file wujian100_open_top_power_routed.rpt -pb wujian100_open_top_power_summary_routed.pb -rpx wujian100_open_top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+172 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:31 ; elapsed = 00:00:12 . Memory (MB): peak = 4263.570 ; gain = 0.000 ; free physical = 3109 ; free virtual = 18151
+INFO: [runtcl-4] Executing : report_route_status -file wujian100_open_top_route_status.rpt -pb wujian100_open_top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file wujian100_open_top_timing_summary_routed.rpt -pb wujian100_open_top_timing_summary_routed.pb -rpx wujian100_open_top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file wujian100_open_top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file wujian100_open_top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file wujian100_open_top_bus_skew_routed.rpt -pb wujian100_open_top_bus_skew_routed.pb -rpx wujian100_open_top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force wujian100_open_top.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1839 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1839]' to change the number of messages that should be reported.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC DPIP-1] Input pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1 input x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1__0 input x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1 input x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1__0 input x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1__0 output x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1__0 output x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1__0 multiplier stage x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/x_out1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1__0 multiplier stage x_pdu_top/x_main_bus_top/chord_top/ex_top/pipeline/y_out1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cross_cur_st_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cross_cur_st_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/FSM_sequential_cross_cur_st_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_dbus_if/iahbl_norm_hit_ff_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_ibus_if/iahbl_hit_ff_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_bmu_top/x_cr_bmu_ibus_if/tcipif_hit_ff_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/FSM_onehot_cur_state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/FSM_onehot_cur_state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/FSM_onehot_cur_state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_cp0_top/x_cr_cp0_lpmd/lpmd_b_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_0/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_0/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_1/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_1/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_2/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_2/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_3/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_3/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_4/entry_acc_err_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0 has an input control pin x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0/ADDRARDADDR[14] (net: x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/ADDRARDADDR[13]) which is driven by a register (x_cpu_top/CPU/x_cr_core_top/x_cr_core/x_cr_ifu_top/x_ibuf/x_ibuf_entry_4/entry_vld_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 30 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+WARNING: [Designutils 20-2079] The BITSTREAM.CONFIG.EXTMASTERCCLK_EN property value "DIV-2" will cause the BITSTREAM.CONFIG.CONFIGRATE property value "40" to be ignored.
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./wujian100_open_top.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] '/home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Thu Jun 24 13:29:08 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+13 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:05 ; elapsed = 00:00:39 . Memory (MB): peak = 4372.543 ; gain = 108.973 ; free physical = 2990 ; free virtual = 18057
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 24 13:29:08 2021...

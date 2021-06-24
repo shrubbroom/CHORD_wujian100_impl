@@ -141,3 +141,9 @@ launch_runs impl_1 -to_step write_bitstream -jobs 8
 Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 ERROR: [Common 17-69] Command failed:  Run'impl_1' is already running and cannot be relaunched.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu Jun 24 13:04:39 2021] Launched synth_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/synth_1/runme.log
+[Thu Jun 24 13:04:39 2021] Launched impl_1...
+Run output will be captured here: /home/shrubbroom/Code/VLSI/wujian100_open/fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/runme.log
