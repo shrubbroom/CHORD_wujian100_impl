@@ -143,8 +143,6 @@ fpga/vivado/vivado.jou,0
 
 fpga/vivado/vivado.log,0
 
-fpga/vivado/vivado_pid51013.str,0
-
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.hw/CHORD_wujian100.lpr,0
 
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.ip_user_files/README.txt,0
@@ -219,6 +217,20 @@ fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_7.xml,0
 
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_8.xml,0
 
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_9.xml,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_10.xml,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_11.xml,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_12.xml,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_13.xml,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_14.xml,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/.jobs/vrs_config_15.xml,0
+
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/vivado_58479.backup.jou,0
 
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_58479.backup.vdi,0
@@ -226,6 +238,10 @@ fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_58479
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/vivado_86055.backup.jou,0
 
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_86055.backup.vdi,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/vivado_238217.backup.jou,0
+
+fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top_238217.backup.vdi,0
 
 fpga/vivado/CHORD_wujian100/CHORD_wujian100.runs/impl_1/wujian100_open_top.tcl,0
 
@@ -31063,7 +31079,7 @@ module ex_top#(ex_top2,43
    interface_input(/*AUTOINST*/interface_input86,5088
    interface_output(/*AUTOINST*/interface_output110,6450
 
-soc/fifo.v,765
+soc/fifo.v,732
 module fifo(input clk,reset,read_fifo_en,valid_out_interface,fifo1,0
 module fifo(input clk,reset,read_fifo_en,valid_out_interface,clk1,0
 module fifo(input clk,reset,read_fifo_en,valid_out_interface,reset1,0
@@ -31071,12 +31087,11 @@ module fifo(input clk,reset,read_fifo_en,valid_out_interface,read_fifo_en1,0
 module fifo(input clk,reset,read_fifo_en,valid_out_interface,valid_out_interface1,0
             input  [31:0]  out_interface,out_interface2,62
             output [31:0] out_fifo,out_fifo3,104
-            output 	     empty);empty4,140
-reg [31:0] 		     mem [15:0];mem5,173
-reg [4:0] 		     rp,wp; //read pointer, write pointerrp6,203
-reg [4:0] 		     rp,wp; //read pointer, write pointerwp6,203
-reg 			     empty_in;empty_in7,257
-integer 		     i;i16,411
+            output reg	     empty);empty4,140
+reg [31:0] 		     mem [255:0];mem5,176
+reg [8:0] 		     rp,wp; //read pointer, write pointerrp6,207
+reg [8:0] 		     rp,wp; //read pointer, write pointerwp6,207
+integer 		     i;i15,398
 
 soc/interface_input.v,2394
 module interface_input #(interface_input1,0

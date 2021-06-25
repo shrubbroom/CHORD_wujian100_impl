@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (lin64) Build 3064766 Wed Nov 18 09:12:47 MST 2020
-| Date         : Thu Jun 24 13:28:14 2021
+| Date         : Thu Jun 24 22:29:22 2021
 | Host         : arch1729 running 64-bit Arch Linux
 | Command      : report_methodology -file wujian100_open_top_methodology_drc_routed.rpt -pb wujian100_open_top_methodology_drc_routed.pb -rpx wujian100_open_top_methodology_drc_routed.rpx
 | Design       : wujian100_open_top
@@ -23,7 +23,7 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 163
+             Violations found: 168
 +-----------+------------------+------------------------------------------------+------------+
 | Rule      | Severity         | Description                                    | Violations |
 +-----------+------------------+------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | DPIR-1    | Warning          | Asynchronous driver check                      | 70         |
 | HPDR-1    | Warning          | Port pin direction inconsistency               | 6          |
 | LUTAR-1   | Warning          | LUT drives async reset alert                   | 2          |
-| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal     | 22         |
+| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal     | 27         |
 | TIMING-18 | Warning          | Missing input or output delay                  | 59         |
 +-----------+------------------+------------------------------------------------+------------+
 
@@ -455,7 +455,7 @@ x_pdu_top/x_main_bus_top/chord_top/bus_top/ahb_lite_cordic/HADDR_LATCH_reg[1]/CL
 x_pdu_top/x_main_bus_top/chord_top/bus_top/ahb_lite_cordic/HADDR_LATCH_reg[20]/CLR,
 x_pdu_top/x_main_bus_top/chord_top/bus_top/ahb_lite_cordic/HADDR_LATCH_reg[21]/CLR,
 x_pdu_top/x_main_bus_top/chord_top/bus_top/ahb_lite_cordic/HADDR_LATCH_reg[22]/CLR
- (the first 15 of 19519 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+ (the first 15 of 19495 listed). The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
 LUTAR-1#2 Warning
@@ -480,92 +480,92 @@ Related violations: <none>
 
 SYNTH-6#1 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#2 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#3 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#4 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#5 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#6 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#7 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#8 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#9 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms0_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#10 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#11 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#12 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#13 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#14 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#15 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#16 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte0_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#17 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#18 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms1_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte1_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#19 Warning
@@ -575,15 +575,40 @@ Related violations: <none>
 
 SYNTH-6#20 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#21 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
 SYNTH-6#22 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#23 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte2_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#24 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_0, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#25 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_1, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#26 Warning
+Timing of a RAM block might be sub-optimal  
+The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
+Related violations: <none>
+
+SYNTH-6#27 Warning
 Timing of a RAM block might be sub-optimal  
 The timing for the instance x_retu_top/x_smu_top/x_sms_top/x_sms2_top/x_sms_sram/x_fpga_spram/x_fpga_byte3_spram/mem_reg_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
