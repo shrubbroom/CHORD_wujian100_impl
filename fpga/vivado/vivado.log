@@ -105,3 +105,27 @@ report_utilization -name utilization_1
 report_utilization: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 9143.938 ; gain = 69.023 ; free physical = 5340 ; free virtual = 26203
 current_project wujian100_vallina
 report_utilization -name utilization_1
+current_project CHORD_wujian100_open
+current_project wujian100_vallina
+current_project CHORD_wujian100_open
+report_power -name {power_1}
+Command: report_power -name power_1
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:01:04 ; elapsed = 00:00:19 . Memory (MB): peak = 9561.133 ; gain = 402.254 ; free physical = 259 ; free virtual = 21553
+current_project wujian100_vallina
+report_power -name {power_1}
+Command: report_power -name power_1
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+0 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:42 ; elapsed = 00:00:15 . Memory (MB): peak = 9668.695 ; gain = 107.562 ; free physical = 252 ; free virtual = 21447

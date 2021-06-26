@@ -41,3 +41,9 @@ current_project CHORD_wujian100_open
 report_utilization -name utilization_1
 current_project wujian100_vallina
 report_utilization -name utilization_1
+current_project CHORD_wujian100_open
+current_project wujian100_vallina
+current_project CHORD_wujian100_open
+report_power -name {power_1}
+current_project wujian100_vallina
+report_power -name {power_1}
